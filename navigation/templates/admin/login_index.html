@@ -1,0 +1,52 @@
+
+{% load static %}
+<html>
+<head>
+	<!--/Style-CSS -->
+	<link rel="stylesheet" href="../static/login/css/style.css" type="text/css" media="all" />
+</head>
+<body>
+	 <!-- form section start -->
+	 <section class="w3l-workinghny-form">
+        <!-- /form -->
+        <div class="workinghny-form-grid">
+            <div class="wrapper">
+                <div class="logo">
+                    <strong>
+                    <h1><a class="brand-logo" href="index.html">Sign In</a></h1>
+
+                     <div class="workinghny-block-grid">
+                       <div class="workinghny-right-img align-end">
+                        <img src="../static/login/images/login8.png" class="img-responsive" alt="img" />
+                       </div>
+                       <div class="form-right-inf">
+                         <div class="login-form-content" >
+                            <h2>Where to?</h2>
+                            <form action="\login_post" class="signin-form" method="post">
+								<div class="one-frm">
+
+                                    <label>Username</label>
+									<input type="text" name="textfield"  placeholder="" required="">
+								</div>
+								<div class="one-frm">
+									<label>Password</label>
+									<input type="password" name="textfield2"  placeholder="" required="">
+								</div>
+                                <label class="check-remaind">
+                                     <input type="checkbox">
+                                       <span class="checkmark"></span>
+                                        <p class="remember">Remember Me</p>
+                                </label>
+                                <button class="btn btn-style mt-3">Login </button>
+                                <p class="already">Don't have an account? <a href="signup">Sign Up</a></p>
+                               </form>
+                            </div>
+                         </div>
+                    </div>
+                </strong>
+               </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
