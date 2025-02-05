@@ -1,11 +1,11 @@
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from django.views.decorators.csrf import csrf_protect
 # Create your views here.
 from navigation_app.models import *
 
-
+@csrf_protect
 def login(request):
     return render(request,"admin/login.html")
 
